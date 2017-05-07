@@ -20,7 +20,7 @@ void loop() {
   int value = analogRead(sensorPin);
   float millivolts = (value / 1024.0) * 5.0;
   float celsius = (millivolts -0.5)*100; 
-   lcd.setCursor(0, 1);
+  lcd.setCursor(0, 1);
   lcd.print(celsius);
   lcd.print("°");
   
@@ -32,7 +32,7 @@ void loop() {
     	digitalWrite(rojo,255);
     	digitalWrite(azul,0);
    		digitalWrite(verde,0);}
-  else	{
+        else	{
     	digitalWrite(verde,255);
   		digitalWrite(azul,0);
     	digitalWrite(rojo,0);}
